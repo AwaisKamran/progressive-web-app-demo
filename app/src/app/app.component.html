@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="aqi-image-container">
+    <img src="../assets/images/{{imageIndex}}.png" />
+  </div>
+
+  <div *ngIf="aqiIndexString">
+    <div class="aqi-text" [ngStyle]="{'color': colorCode }">{{ aqiIndexString }}</div>
+    <div class="aqi-index" [ngStyle]="{'color': colorCode }">{{ aqiIndexObj.aqi }}</div>
+    <div class="city-name">{{ aqiIndexObj.city.name }}</div>
+    <div class="city-attribute-name">{{ aqiIndexObj.attributions[0].name }}</div>
+    <div class="iaqi-pm25">pm25 {{ aqiIndexObj.iaqi.pm25.v }}</div>
+    <div class="time">w {{ aqiIndexObj.time.s }}</div>
+  </div>
+</div>
