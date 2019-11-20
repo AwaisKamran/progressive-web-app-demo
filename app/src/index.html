@@ -2,12 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>App</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Quality Index</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- App manifest -->
+  <link rel="manifest" href="manifest.json">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Air Quality Index">
+  <!-- Windows tile icon -->
+  <meta name="msapplication-TileColor" content="#2F3BA2">
 </head>
 <body>
-  <app-root></app-root>
+  <header class="header">
+    <div class="aqi-heading">Air Quality Index</div>
+  </header>
+
+  <div class="root-padding"><app-root></app-root></div>
+
+  <footer>Developed for Devfest 2019</footer>
 </body>
 </html>

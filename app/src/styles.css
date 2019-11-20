@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+.header{
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    background-color: #44447f;
+    padding-left: 10px;
+}
+
+body{
+    margin: 0px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+
+.root-padding{
+    padding: 10px
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    background-color: #040413;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
