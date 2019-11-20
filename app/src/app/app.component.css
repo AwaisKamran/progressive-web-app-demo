@@ -20,5 +20,31 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 10px;
+    font-family: Calibri;
+    font-weight: 100;
+}
+
+.aqi-text{
+    font-weight: 500 !important;
+    font-size: 40px;
+}
+
+.aqi-index{
+    font-size: 45px;
+    font-weight: 100 !important;
+    line-height: 35px;
+}
+
+.city-name, .city-attribute-name{
+    font-weight: 400 !important;
+}
+
+.other-message{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 40px;
+    font-family: Calibri;
+    font-weight: 300;
 }

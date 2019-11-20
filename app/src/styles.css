@@ -2,8 +2,11 @@
     height: 50px;
     line-height: 50px;
     color: white;
-    background-color: #44447f;
+    background-color: #447c7f;
     padding-left: 10px;
+    font-family: Calibri;
+    font-weight: 100;
+    font-size: 23px;
 }
 
 body{
@@ -21,8 +24,29 @@ footer{
     bottom: 0px;
     text-align: center;
     width: 100%;
-    background-color: #040413;
+    background-color: #535354;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: Calibri;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.clear-both{
+    clear: both;
+}
+
+.refresh-icon{
+    margin-right: 15px;
+    margin-top: 5px;
+    cursor: pointer;
 }

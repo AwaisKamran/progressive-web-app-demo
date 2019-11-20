@@ -12,16 +12,20 @@ export class AppComponent {
   public colorCode: string;
   public aqiIndexObj: any;
   public imageIndex: number = -1;
+  public hasAqi: boolean = false;
 
   constructor(
     public statsService: StatsService
   ) {
     this.statsService.getAirQualityIndex().subscribe(
       (res: any) => {
+        this.hasAqi = true;
         this.aqiIndexObj = res.data;
         this.evaluateAQI(res.data.aqi);
       },
-      (err) => { }
+      (err) => { 
+        this.hasAqi = false;
+      }
     )
   }
 
@@ -57,7 +61,7 @@ export class AppComponent {
       this.imageIndex = 6;
     }
     else{
-      this.aqiIndexString = null;
+      this.hasAqi = false;
     }
   }
 }
