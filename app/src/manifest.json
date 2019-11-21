@@ -1,9 +1,0 @@
-{
-    "name": "Air Quality Index",
-    "short_name": "Air Quality Index",
-    "icons": [],
-    "start_url": "/index.html",
-    "display": "standalone",
-    "background_color": "#14bbb3",
-    "theme_color": "#14bbb3"
-  }

@@ -4,7 +4,7 @@
       <img src="../assets/images/{{imageIndex}}.png" /><br/>
     </div>
 
-    <div *ngIf="hasAqi; else other" class="aqi-description">
+    <div *ngIf="hasAqi" class="aqi-description">
       <div class="aqi-text" [ngStyle]="{'color': colorCode }">{{ aqiIndexString }}</div>
       <div class="aqi-index" [ngStyle]="{'color': colorCode }">{{ aqiIndexObj.aqi }}</div><br/>
       <div class="city-name">{{ aqiIndexObj.city.name }}</div>
