@@ -1,15 +1,28 @@
-<div class="container">
-  <main>
-    <div class="aqi-image-container">
-      <img src="./assets/images/{{imageIndex}}.png" /><br/>
-    </div>
+<header class="header">
+  <img src="./assets/images/logo.png" class="float-left logo" width="40"/>
+  <div class="float-left aqi-heading">
+    Air Quality Index
+  </div>
+  <div class="float-right refresh-icon"><img src="./assets/images/refresh.png" width="25"/></div>
+  <div class="clear-both"></div>
+</header>
 
-    <div *ngIf="hasAqi" class="aqi-description">
-      <div class="aqi-text" [ngStyle]="{'color': colorCode }">{{ aqiIndexString }}</div>
-      <div class="aqi-index" [ngStyle]="{'color': colorCode }">{{ aqiIndexObj.aqi }}</div><br/>
-      <div class="city-name">{{ aqiIndexObj.city.name }}</div>
-      <div class="city-attribute-name">{{ aqiIndexObj.attributions[0].name }}</div>
-      <div class="time">Last recorded {{ aqiIndexObj.time.s | date: 'short'}}</div>
-    </div>
-  </main>
+<div class="root-padding">
+  <div class="container">
+    <main>
+      <div class="aqi-image-container">
+        <img src="./assets/images/{{imageIndex}}.png" /><br/>
+      </div>
+  
+      <div *ngIf="hasAqi" class="aqi-description">
+        <div class="aqi-text" [ngStyle]="{'color': colorCode }">{{ aqiIndexString }}</div>
+        <div class="aqi-index" [ngStyle]="{'color': colorCode }">{{ aqiIndexObj.aqi }}</div><br/>
+        <div class="city-name">{{ aqiIndexObj.city.name }}</div>
+        <div class="city-attribute-name">{{ aqiIndexObj.attributions[0].name }}</div>
+        <div class="time">Last recorded {{ aqiIndexObj.time.s | date: 'short'}}</div>
+      </div>
+    </main>
+  </div>
 </div>
+
+<footer>Developed for Devfest 2019</footer>

@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Air Quality Index</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <base href="/">
 
-  <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#1976d2">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#14bbb3">
 
   <!-- AQI: Add iOS meta tags and icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -20,18 +21,7 @@
   <meta name="description" content="An app that registers the current air quality index">
 </head>
 <body>
-  <header class="header">
-    <img src="assets/images/logo.png" class="float-left logo" width="40"/>
-    <div class="float-left aqi-heading">
-      Air Quality Index
-    </div>
-    <div class="float-right refresh-icon"><img src="./assets/images/refresh.png" width="25"/></div>
-    <div class="clear-both"></div>
-  </header>
-
-  <div class="root-padding"><app-root></app-root></div>
-
-  <footer>Developed for Devfest 2019</footer>
+  <app-root></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>

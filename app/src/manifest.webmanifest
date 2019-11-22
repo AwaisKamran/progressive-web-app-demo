@@ -1,10 +1,11 @@
 {
   "name": "Air Quality Index",
   "short_name": "AQI",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#14bbb3",
+  "background_color": "#14bbb3",
   "display": "standalone",
-  "start_url": "/index.html",
+  "start_url": "/",
+  "scope": "/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
@@ -45,6 +46,20 @@
       "src": "assets/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "headlines",
+      "urls": [
+        "https://api.waqi.info/**"
+      ],
+      "cacheConfig": {
+        "maxSize": 10,
+        "maxAge": "1d",
+        "timeout": "5s",
+        "strategy": "freshness"
+      }
     }
   ]
 }

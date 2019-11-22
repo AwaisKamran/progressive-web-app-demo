@@ -25,5 +25,19 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "api",
+      "urls": [
+        "https://api.waqi.info/feed/lahore/?token=265fe88777debc3a5e03e614ad2016b0315c468d"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 15,
+        "maxAge": "1h",
+        "timeout": "5s"
+      }
+    }
   ]
 }
